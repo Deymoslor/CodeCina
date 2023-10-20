@@ -1,0 +1,12 @@
+D:\ProyectoCodeCina\CodeCina\Backend\CodeCina.API\CodeCina.Domain\bin\Debug\net6.0\CodeCina.Domain.deps.json
+D:\ProyectoCodeCina\CodeCina\Backend\CodeCina.API\CodeCina.Domain\bin\Debug\net6.0\CodeCina.Domain.dll
+D:\ProyectoCodeCina\CodeCina\Backend\CodeCina.API\CodeCina.Domain\bin\Debug\net6.0\CodeCina.Domain.pdb
+D:\ProyectoCodeCina\CodeCina\Backend\CodeCina.API\CodeCina.Domain\obj\Debug\net6.0\CodeCina.Domain.csproj.AssemblyReference.cache
+D:\ProyectoCodeCina\CodeCina\Backend\CodeCina.API\CodeCina.Domain\obj\Debug\net6.0\CodeCina.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProyectoCodeCina\CodeCina\Backend\CodeCina.API\CodeCina.Domain\obj\Debug\net6.0\CodeCina.Domain.AssemblyInfoInputs.cache
+D:\ProyectoCodeCina\CodeCina\Backend\CodeCina.API\CodeCina.Domain\obj\Debug\net6.0\CodeCina.Domain.AssemblyInfo.cs
+D:\ProyectoCodeCina\CodeCina\Backend\CodeCina.API\CodeCina.Domain\obj\Debug\net6.0\CodeCina.Domain.csproj.CoreCompileInputs.cache
+D:\ProyectoCodeCina\CodeCina\Backend\CodeCina.API\CodeCina.Domain\obj\Debug\net6.0\CodeCina.Domain.dll
+D:\ProyectoCodeCina\CodeCina\Backend\CodeCina.API\CodeCina.Domain\obj\Debug\net6.0\refint\CodeCina.Domain.dll
+D:\ProyectoCodeCina\CodeCina\Backend\CodeCina.API\CodeCina.Domain\obj\Debug\net6.0\CodeCina.Domain.pdb
+D:\ProyectoCodeCina\CodeCina\Backend\CodeCina.API\CodeCina.Domain\obj\Debug\net6.0\ref\CodeCina.Domain.dll
