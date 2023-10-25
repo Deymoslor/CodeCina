@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodeCina.Domain.Entities
 {
-    public class Producto
+    public class Products
     {
         public int IdProducto { get; set; }
         public string? Nombre { get; set; }

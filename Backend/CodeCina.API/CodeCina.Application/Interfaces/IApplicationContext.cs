@@ -13,7 +13,7 @@ namespace CodeCina.Application.Interfaces
 
     public interface IApplicationDbContext
     {
-        DbSet<Producto> Productos { get; set; }
+        DbSet<Products> Productos { get; set; }
 
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
         DatabaseFacade Database { get; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodeCina.Application.Dtos.Products
 {
-    public class productDto
+    public class ProductDto
     {
         public int IdProducto { get; set; }
         public string? Nombre { get; set; }
