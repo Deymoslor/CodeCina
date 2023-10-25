@@ -5693,19 +5693,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\stanl\\.nuget\\packages\\": {}
+    "C:\\Users\\dylan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ProyectoCodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.API\\CodeCina.API.csproj",
+      "projectUniqueName": "E:\\planDeInvierno\\CodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.API\\CodeCina.API.csproj",
       "projectName": "CodeCina.API",
-      "projectPath": "D:\\ProyectoCodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.API\\CodeCina.API.csproj",
-      "packagesPath": "C:\\Users\\stanl\\.nuget\\packages\\",
-      "outputPath": "D:\\ProyectoCodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.API\\obj\\",
+      "projectPath": "E:\\planDeInvierno\\CodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.API\\CodeCina.API.csproj",
+      "packagesPath": "C:\\Users\\dylan\\.nuget\\packages\\",
+      "outputPath": "E:\\planDeInvierno\\CodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\stanl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dylan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5719,14 +5719,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\ProyectoCodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.Application\\CodeCina.Application.csproj": {
-              "projectPath": "D:\\ProyectoCodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.Application\\CodeCina.Application.csproj"
+            "E:\\planDeInvierno\\CodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.Application\\CodeCina.Application.csproj": {
+              "projectPath": "E:\\planDeInvierno\\CodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.Application\\CodeCina.Application.csproj"
             },
-            "D:\\ProyectoCodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.Domain\\CodeCina.Domain.csproj": {
-              "projectPath": "D:\\ProyectoCodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.Domain\\CodeCina.Domain.csproj"
+            "E:\\planDeInvierno\\CodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.Domain\\CodeCina.Domain.csproj": {
+              "projectPath": "E:\\planDeInvierno\\CodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.Domain\\CodeCina.Domain.csproj"
             },
-            "D:\\ProyectoCodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.Infraestructure\\CodeCina.Infraestructure.csproj": {
-              "projectPath": "D:\\ProyectoCodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.Infraestructure\\CodeCina.Infraestructure.csproj"
+            "E:\\planDeInvierno\\CodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.Infraestructure\\CodeCina.Infraestructure.csproj": {
+              "projectPath": "E:\\planDeInvierno\\CodeCina\\CodeCina\\Backend\\CodeCina.API\\CodeCina.Infraestructure\\CodeCina.Infraestructure.csproj"
             }
           }
         }
@@ -5787,7 +5787,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

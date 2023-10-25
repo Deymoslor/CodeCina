@@ -9,11 +9,9 @@
   <ItemGroup>
     <Folder Include="Commands\" />
     <Folder Include="Configurations\" />
-    <Folder Include="Dtos\" />
     <Folder Include="Mappings\" />
     <Folder Include="Validators\" />
     <Folder Include="References\" />
-    <Folder Include="Queries\" />
   </ItemGroup>
 
   <ItemGroup>
