@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using CodeCina.Application.Dtos.Products;
+using CodeCina.Application.Queries.Products;
 using CodeCina.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace CodeCina.Application.Mappings.ProductsMapping
         public ProductMapping()
         {
             CreateMap<Products, ProductDto>();
+            CreateMap<GetByIdProductQuery, Products>();
         }
     }
 }

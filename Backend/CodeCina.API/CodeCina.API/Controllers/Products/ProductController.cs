@@ -17,7 +17,7 @@ namespace CodeCina.API.Controllers.Products
         }
 
         [HttpGet]
-        [Route("queryGetAllProducts")]
+        [Route("GetAllProducts")]
         public async Task<IActionResult> GetAllProducts ()
         {
             try
@@ -28,6 +28,25 @@ namespace CodeCina.API.Controllers.Products
             catch (Exception ex)
             {
                 throw new Exception("Error: ", ex);
+            }
+        }
+
+        [HttpGet]
+        [Route("GetByIdProduct/{id}")]
+        public async Task<IActionResult> GetByIdProduct(int id)
+        {
+            try
+            {
+                var result = await _mediator.Send(new GetByIdProductQuery{ IdProducto  = id});
+                if (result == null)
+                {
+                    return NotFound();
+                }
+                else { return Ok(result); }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error {ex.Message}", ex);
             }
         }
     }
