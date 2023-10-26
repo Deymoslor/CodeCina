@@ -11,7 +11,6 @@ using System.Threading.Tasks;
 
 namespace CodeCina.Infraestructure.Persistence.DbContexts
 {
-
     public partial class CodeCinaContext : DbContext, IApplicationDbContext
     {
         public CodeCinaContext() { }
@@ -22,6 +21,8 @@ namespace CodeCina.Infraestructure.Persistence.DbContexts
         }
 
         public virtual DbSet<Producto> Productos { get; set; } = null!;
+
+        public virtual DbSet<TypeProduct> TypeProducts { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
