@@ -17,6 +17,7 @@ namespace CodeCina.Application.Interfaces
 
         DbSet<TypeProduct> TypeProducts { get; set; }
 
+        DbSet<Menu> Menus { get; set; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
         DatabaseFacade Database { get; }
 
