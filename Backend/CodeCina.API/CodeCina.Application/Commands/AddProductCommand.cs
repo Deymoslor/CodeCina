@@ -44,7 +44,7 @@ namespace CodeCina.Application.Commands
 
             _logger.LogDebug("AddProductCommand Finished");
 
-            return _mapper.Map<ProductDto>(query);
+            return _mapper.Map<ProductDto>(request);
         }
     }
     
