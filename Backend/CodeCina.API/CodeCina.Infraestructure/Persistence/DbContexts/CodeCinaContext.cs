@@ -20,7 +20,7 @@ namespace CodeCina.Infraestructure.Persistence.DbContexts
 
         }
 
-        public virtual DbSet<Products> Productos { get; set; } = null!;
+        public virtual DbSet<Product> Products { get; set; } = null!;
 
         public virtual DbSet<Menu> Menus { get; set; } = null!;
 

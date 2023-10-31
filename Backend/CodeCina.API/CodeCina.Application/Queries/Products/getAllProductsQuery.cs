@@ -32,7 +32,7 @@ namespace CodeCina.Application.Queries.Products
         public async Task<List<ProductDto>> Handle(getAllProductsQuery request, CancellationToken cancellationToken)
         {
             _logger.LogDebug("getAllProductsQueryHandler Started");
-            var query = await _context.Productos
+            var query = await _context.Products
                 .AsNoTracking()
                 .ToListAsync(cancellationToken);
 

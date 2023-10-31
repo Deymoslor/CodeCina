@@ -10,9 +10,9 @@ using CodeCina.Domain.Entities;
 namespace CodeCina.Infraestructure.Persistence.Configurations
 {
 
-    public class ProductoConfiguration : IEntityTypeConfiguration<Products>
+    public class ProductoConfiguration : IEntityTypeConfiguration<Product>
     {
-        public void Configure(EntityTypeBuilder<Products> builder)
+        public void Configure(EntityTypeBuilder<Product> builder)
         {
             builder.HasKey(e => e.IdProducto)
                 .HasName("PK__Producto__DB05CEDB5A4BAED6");

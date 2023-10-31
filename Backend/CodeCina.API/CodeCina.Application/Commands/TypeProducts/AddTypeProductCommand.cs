@@ -15,7 +15,7 @@ namespace CodeCina.Application.Commands.TypeProducts
 {
     public class AddTypeProductCommand : IRequest<TypeProductDto>
     {
-        public string Nombre { get; set; }
+        public string? Nombre { get; set; }
     }
 
     public class AddTypeProductCommandHandler : IRequestHandler<AddTypeProductCommand, TypeProductDto>

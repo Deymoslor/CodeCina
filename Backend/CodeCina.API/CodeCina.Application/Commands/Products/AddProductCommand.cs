@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeCina.Application.Commands
+namespace CodeCina.Application.Commands.Products
 {
     public class AddProductCommand : IRequest<ProductDto>
     {
@@ -37,9 +37,9 @@ namespace CodeCina.Application.Commands
         public async Task<ProductDto> Handle(AddProductCommand query, CancellationToken cancellationToken)
         {
             _logger.LogDebug("AddProductCommand Started");
-            var request =   _mapper.Map<Products>(query);
+            var request = _mapper.Map<Product>(query);
 
-            await _context.Productos.AddAsync(request);
+            await _context.Products.AddAsync(request);
             await _context.SaveChangesAsync(cancellationToken);
 
             _logger.LogDebug("AddProductCommand Finished");
@@ -47,5 +47,5 @@ namespace CodeCina.Application.Commands
             return _mapper.Map<ProductDto>(request);
         }
     }
-    
+
 }

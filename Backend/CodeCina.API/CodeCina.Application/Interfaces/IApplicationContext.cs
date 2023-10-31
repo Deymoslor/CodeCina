@@ -13,7 +13,7 @@ namespace CodeCina.Application.Interfaces
 
     public interface IApplicationDbContext
     {
-        DbSet<Products> Productos { get; set; }
+        DbSet<Product> Products { get; set; }
 
         DbSet<TypeProduct> TypeProducts { get; set; }
 

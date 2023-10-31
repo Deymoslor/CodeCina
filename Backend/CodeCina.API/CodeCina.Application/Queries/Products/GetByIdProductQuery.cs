@@ -35,7 +35,7 @@ namespace CodeCina.Application.Queries.Products
         public async Task<ProductDto> Handle(GetByIdProductQuery request, CancellationToken cancellationToken)
         {
             _logger.LogDebug("GetByIdProductQuery Started");
-            var query = await _context.Productos
+            var query = await _context.Products
                 .FirstOrDefaultAsync(x => x.IdProducto == request.IdProducto, cancellationToken);
 
             var productDto = _mapper.Map<ProductDto>(query);
