@@ -26,6 +26,8 @@ namespace CodeCina.Infraestructure.Persistence.DbContexts
 
         public virtual DbSet<TypeProduct> TypeProducts { get; set; } = null!;
 
+        public virtual DbSet<MenuProduct> MenuProducts { get; set; } = null!;
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
