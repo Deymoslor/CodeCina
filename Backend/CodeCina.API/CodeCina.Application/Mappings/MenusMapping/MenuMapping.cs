@@ -16,7 +16,7 @@ namespace CodeCina.Application.Mappings.MenusMapping
     {
         public MenuMapping()
         {
-            CreateMap<Menu, MenuDto>();
+            CreateMap<Dish, DishDto>();
         }
     }
 }

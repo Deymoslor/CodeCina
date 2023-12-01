@@ -22,11 +22,13 @@ namespace CodeCina.Infraestructure.Persistence.DbContexts
 
         public virtual DbSet<Product> Products { get; set; } = null!;
 
-        public virtual DbSet<Menu> Menus { get; set; } = null!;
+        public virtual DbSet<Dish> Dishes { get; set; } = null!;
 
-        public virtual DbSet<TypeProduct> TypeProducts { get; set; } = null!;
+        public virtual DbSet<ProductType> ProductTypes { get; set; } = null!;
 
-        public virtual DbSet<MenuProduct> MenuProducts { get; set; } = null!;
+        public virtual DbSet<DishProduct> DishProducts { get; set; } = null!;
+
+        public virtual DbSet<Measure> Measures { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -14,10 +14,10 @@ namespace CodeCina.Application.Mappings.TypeProductsMapping
     {
         public TypeProductMapping()
         {
-            CreateMap<TypeProduct, TypeProductDto>();
+            CreateMap<ProductType, ProductTypeDto>();
 
-            CreateMap<AddTypeProductCommand, TypeProductDto>();
-            CreateMap<AddTypeProductCommand, TypeProduct>();
+            CreateMap<AddProductTypeCommand, ProductTypeDto>();
+            CreateMap<AddProductTypeCommand, ProductType>();
         }
     }
 }

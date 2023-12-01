@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="Configurations\" />
+    <Folder Include="Queries\MenuProducts\" />
     <Folder Include="Validators\" />
     <Folder Include="References\" />
   </ItemGroup>

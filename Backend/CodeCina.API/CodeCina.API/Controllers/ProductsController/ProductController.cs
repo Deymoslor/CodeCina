@@ -38,7 +38,7 @@ namespace CodeCina.API.Controllers.Products
         {
             try
             {
-                var result = await _mediator.Send(new GetByIdProductQuery{ IdProducto  = id});
+                var result = await _mediator.Send(new GetByIdProductQuery{ IdProduct  = id});
                 if (result == null)
                 {
                     return NotFound();

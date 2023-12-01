@@ -14,11 +14,12 @@ namespace CodeCina.Application.Commands.Products
 {
     public class EditProductCommand : IRequest<ProductDto>
     {
-        public int IdProducto { get; set; }
-        public string? Nombre { get; set; }
-        public int? IdTipoProducto { get; set; }
-        public int? Cantidad { get; set; }
-        public int? IdMedida { get; set; }
+        public int IdProduct { get; set; }
+        public string? ProductName { get; set; }
+        public int? Quantity { get; set; }
+        public bool? ProductState { get; set; }
+        public int? IdTypeProduct { get; set; }
+        public int? IdMeasure { get; set; }
     }
 
     public class EditProductCommandHandler : IRequestHandler<EditProductCommand, ProductDto>
@@ -40,7 +41,7 @@ namespace CodeCina.Application.Commands.Products
             _logger.LogDebug("EditProductCommandHandler START");
 
             var consulta = await _context.Products.FirstOrDefaultAsync
-                (x => x.IdProducto == request.IdProducto, cancellationToken);
+                (x => x.IdProduct == request.IdProduct, cancellationToken);
             if (consulta == null)
             {
                 throw new InvalidOperationException("No encontrado");

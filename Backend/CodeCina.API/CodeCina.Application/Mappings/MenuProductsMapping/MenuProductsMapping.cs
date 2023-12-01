@@ -13,7 +13,17 @@ namespace CodeCina.Application.Mappings.MenuProductsMapping
     {
         public MenuProductsMapping() 
         {
-            CreateMap<MenuProduct, MenuProductDto>();
+            CreateMap<Product, DishProductDto>()
+                .ForMember(x => x.NombreProducto, z => z.MapFrom(y => y.ProductName))
+                .ForMember(x => x.CantidadProducto, z => z.MapFrom(y => y.Quantity));
+            CreateMap<Dish, DishProductDto>()
+                .ForMember(x => x.NombreMenu, z => z.MapFrom(y => y.DishName))
+                .ForMember(x => x.DescripcionMenu, z => z.MapFrom(y => y.DishDescription))
+                .ForMember(x => x.NotaMenu, z => z.MapFrom(y => y.DishNote));
+            CreateMap<Measure, DishProductDto>()
+                .ForMember(x => x.DescripcionMenu, z => z.MapFrom(y => y.DescriptionMeasure));
+            CreateMap<ProductType, DishProductDto>()
+                .ForMember(x => x.NombreTipoProducto, z => z.MapFrom(y => y.NameProductType));
         }
         
     }

@@ -12,12 +12,12 @@ using System.Threading.Tasks;
 
 namespace CodeCina.Application.Queries.TypeProducts
 {
-    public class getAllTypeProductsQuery : IRequest<List<TypeProductDto>>
+    public class getAllTypeProductsQuery : IRequest<List<ProductTypeDto>>
     {
 
     }
 
-    public class getAllTypeProductsQueryHandler : IRequestHandler<getAllTypeProductsQuery, List<TypeProductDto>>
+    public class getAllTypeProductsQueryHandler : IRequestHandler<getAllTypeProductsQuery, List<ProductTypeDto>>
     {
         private readonly IApplicationDbContext _context;
         private readonly ILogger<getAllTypeProductsQueryHandler> _logger;
@@ -29,13 +29,13 @@ namespace CodeCina.Application.Queries.TypeProducts
             _logger = logger;
             _mapper = mapper;
         }
-        public async Task<List<TypeProductDto>> Handle(getAllTypeProductsQuery query, CancellationToken cancellationToken)
+        public async Task<List<ProductTypeDto>> Handle(getAllTypeProductsQuery query, CancellationToken cancellationToken)
         {
             _logger.LogDebug("");
 
-            var consulta = await _context.TypeProducts.ToListAsync();
+            var consulta = await _context.ProductTypes.ToListAsync();
 
-            var result = _mapper.Map<List<TypeProductDto>>(consulta);
+            var result = _mapper.Map<List<ProductTypeDto>>(consulta);
 
             _logger.LogDebug("");
 

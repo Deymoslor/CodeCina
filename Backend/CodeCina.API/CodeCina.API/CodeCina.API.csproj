@@ -24,4 +24,8 @@
     <ProjectReference Include="..\CodeCina.Infraestructure\CodeCina.Infraestructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\MenuProductsController\" />
+  </ItemGroup>
+
 </Project>

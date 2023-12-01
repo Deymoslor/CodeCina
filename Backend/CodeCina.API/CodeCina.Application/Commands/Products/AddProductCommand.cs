@@ -14,10 +14,12 @@ namespace CodeCina.Application.Commands.Products
 {
     public class AddProductCommand : IRequest<ProductDto>
     {
-        public string? Nombre { get; set; }
-        public int? IdTipoProducto { get; set; }
-        public int? Cantidad { get; set; }
-        public int? IdMedida { get; set; }
+        public int IdProduct { get; set; }
+        public string? ProductName { get; set; }
+        public int? Quantity { get; set; }
+        public bool? ProductState { get; set; } = true;
+        public int? IdTypeProduct { get; set; }
+        public int? IdMeasure { get; set; }
 
     }
 
