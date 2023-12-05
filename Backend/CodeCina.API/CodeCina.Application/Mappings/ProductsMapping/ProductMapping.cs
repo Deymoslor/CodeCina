@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CodeCina.Application.Commands;
+using CodeCina.Application.Commands.Products;
 using CodeCina.Application.Dtos.Products;
 using CodeCina.Application.Queries.Products;
 using CodeCina.Domain.Entities;
@@ -15,11 +15,11 @@ namespace CodeCina.Application.Mappings.ProductsMapping
     {
         public ProductMapping()
         {
-            CreateMap<Products, ProductDto>();
-            CreateMap<GetByIdProductQuery, Products>();
+            CreateMap<Product, ProductDto>();
+            CreateMap<GetByIdProductQuery, Product>();
 
-            CreateMap<AddProductCommand, ProductDto>();
-            CreateMap<AddProductCommand, Products>();
+            CreateMap<AddProductCommand, Product>();
+            CreateMap<EditProductCommand, Product>();
         }
     }
 }

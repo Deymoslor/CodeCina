@@ -15,7 +15,7 @@ namespace CodeCina.Application.Queries.Products
 {
     public class GetByIdProductQuery: IRequest<ProductDto>
     {
-        public int IdProducto { get; set; }
+        public int IdProduct { get; set; }
     }
     public class GetByIdProductQueryHandler: IRequestHandler<GetByIdProductQuery, ProductDto>
     {
@@ -35,14 +35,14 @@ namespace CodeCina.Application.Queries.Products
         public async Task<ProductDto> Handle(GetByIdProductQuery request, CancellationToken cancellationToken)
         {
             _logger.LogDebug("GetByIdProductQuery Started");
-            var query = await _context.Productos
-                .FirstOrDefaultAsync(x => x.IdProducto == request.IdProducto, cancellationToken);
+            var query = await _context.Products
+                .FirstOrDefaultAsync(x => x.IdProduct == request.IdProduct, cancellationToken);
 
             var productDto = _mapper.Map<ProductDto>(query);
 
             _logger.LogDebug("GetByIdProductQuery Finished");
             return productDto;
-
+    
         }
     }
 }

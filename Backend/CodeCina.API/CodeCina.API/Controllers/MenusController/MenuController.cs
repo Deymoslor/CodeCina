@@ -25,7 +25,7 @@ namespace CodeCina.API.Controllers.MenusController
         {
             try
             {
-                var result = await _mediator.Send(new getAllMenuQuery());
+                var result = await _mediator.Send(new getAllDishQuery());
                 return Ok(result);
             }
             catch (Exception ex)

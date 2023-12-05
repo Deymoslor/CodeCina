@@ -1,4 +1,4 @@
-﻿using CodeCina.Application.Commands;
+﻿using CodeCina.Application.Commands.Products;
 using CodeCina.Application.Queries.Products;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -38,7 +38,7 @@ namespace CodeCina.API.Controllers.Products
         {
             try
             {
-                var result = await _mediator.Send(new GetByIdProductQuery{ IdProducto  = id});
+                var result = await _mediator.Send(new GetByIdProductQuery{ IdProduct  = id});
                 if (result == null)
                 {
                     return NotFound();
@@ -54,6 +54,25 @@ namespace CodeCina.API.Controllers.Products
         [HttpPost]
         [Route("AddProduct")]
         public async Task<IActionResult> AddProductCommand (AddProductCommand command)
+        {
+            try
+            {
+                var result = await _mediator.Send(command);
+                if (result == null)
+                {
+                    return NotFound();
+                }
+                else { return Ok(result); }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error {ex.Message}", ex);
+            }
+        }
+
+        [HttpPut]
+        [Route("EditProduct")]
+        public async Task<IActionResult> EditProductCommand(EditProductCommand command)
         {
             try
             {

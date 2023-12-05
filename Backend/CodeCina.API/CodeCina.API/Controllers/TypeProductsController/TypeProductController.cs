@@ -35,7 +35,7 @@ namespace CodeCina.API.Controllers.TypeProductsController
 
         [HttpPost]
         [Route("addATypeProductCommand")]
-        public async Task<IActionResult> addATypeProductCommand(AddTypeProductCommand command)
+        public async Task<IActionResult> addATypeProductCommand(AddProductTypeCommand command)
         {
             try
             {

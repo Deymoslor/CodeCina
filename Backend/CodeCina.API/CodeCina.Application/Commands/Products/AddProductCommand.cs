@@ -10,14 +10,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeCina.Application.Commands
+namespace CodeCina.Application.Commands.Products
 {
     public class AddProductCommand : IRequest<ProductDto>
     {
-        public string? Nombre { get; set; }
-        public int? IdTipoProducto { get; set; }
-        public int? Cantidad { get; set; }
-        public int? IdMedida { get; set; }
+        public int IdProduct { get; set; }
+        public string? ProductName { get; set; }
+        public int? Quantity { get; set; }
+        public bool? ProductState { get; set; } = true;
+        public int? IdTypeProduct { get; set; }
+        public int? IdMeasure { get; set; }
 
     }
 
@@ -37,9 +39,9 @@ namespace CodeCina.Application.Commands
         public async Task<ProductDto> Handle(AddProductCommand query, CancellationToken cancellationToken)
         {
             _logger.LogDebug("AddProductCommand Started");
-            var request =   _mapper.Map<Products>(query);
+            var request = _mapper.Map<Product>(query);
 
-            await _context.Productos.AddAsync(request);
+            await _context.Products.AddAsync(request);
             await _context.SaveChangesAsync(cancellationToken);
 
             _logger.LogDebug("AddProductCommand Finished");
@@ -47,5 +49,5 @@ namespace CodeCina.Application.Commands
             return _mapper.Map<ProductDto>(request);
         }
     }
-    
+
 }
